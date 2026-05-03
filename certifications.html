@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Certifications | Pooja A M</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .cert-header {
+            text-align: center;
+            margin-bottom: 4rem;
+        }
+
+        .cert-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .cert-card {
+            background: var(--white);
+            border-radius: 20px;
+            padding: 2rem;
+            box-shadow: var(--shadow);
+            border: 1px solid var(--glass-border);
+            text-align: center;
+            transition: var(--transition);
+        }
+
+        .cert-card:hover {
+            transform: scale(1.03);
+            border-color: var(--primary-color);
+        }
+
+        .cert-icon {
+            width: 80px;
+            height: 80px;
+            background: var(--bg-color);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 1.5rem;
+            font-size: 2rem;
+            color: var(--secondary-color);
+        }
+
+        .cert-card h3 {
+            margin-bottom: 0.5rem;
+            font-size: 1.2rem;
+        }
+
+        .cert-card .issuer {
+            color: var(--accent-color);
+            font-weight: 600;
+            display: block;
+            margin-bottom: 1rem;
+        }
+
+        .cert-card .date {
+            font-size: 0.85rem;
+            color: var(--light-text);
+            margin-bottom: 1.5rem;
+            display: block;
+        }
+
+        .view-btn {
+            padding: 8px 24px;
+            font-size: 0.85rem;
+        }
+
+        .placeholder-text {
+            grid-column: 1 / -1;
+            text-align: center;
+            padding: 4rem;
+            background: var(--glass-bg);
+            border-radius: 20px;
+            border: 2px dashed var(--primary-color);
+            color: var(--light-text);
+        }
+    </style>
+</head>
+<body>
+    <header id="header">
+        <div class="container">
+            <nav>
+                <div class="logo">POOJA.AM</div>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="education.html">Education</a></li>
+                    <li><a href="certifications.html" class="active">Certifications</a></li>
+                </ul>
+                <div class="mobile-menu-btn">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="cert-section">
+            <div class="cert-header reveal">
+                <h1>Certifications</h1>
+                <p>Validation of my technical skills and professional growth.</p>
+            </div>
+
+            <div class="cert-grid">
+                <!-- Placeholder Certification 1 -->
+                <div class="cert-card reveal">
+                    <div class="cert-icon">
+                        <i class="fas fa-award"></i>
+                    </div>
+                    <h3>Python for Data Science</h3>
+                    <span class="issuer">IBM / Coursera</span>
+                    <span class="date">Expected 2024</span>
+                    <button class="btn btn-outline view-btn" disabled>View Certificate</button>
+                </div>
+
+                <!-- Placeholder Certification 2 -->
+                <div class="cert-card reveal">
+                    <div class="cert-icon">
+                        <i class="fas fa-certificate"></i>
+                    </div>
+                    <h3>Java Programming Masterclass</h3>
+                    <span class="issuer">Udemy</span>
+                    <span class="date">Completed 2023</span>
+                    <button class="btn btn-outline view-btn" disabled>View Certificate</button>
+                </div>
+
+                <!-- Placeholder Certification 3 -->
+                <div class="cert-card reveal">
+                    <div class="cert-icon">
+                        <i class="fas fa-scroll"></i>
+                    </div>
+                    <h3>Web Development Bootcamp</h3>
+                    <span class="issuer">FreeCodeCamp</span>
+                    <span class="date">Completed 2023</span>
+                    <button class="btn btn-outline view-btn" disabled>View Certificate</button>
+                </div>
+                
+                <div class="placeholder-text reveal">
+                    <i class="fas fa-plus-circle" style="font-size: 2rem; margin-bottom: 1rem; display: block;"></i>
+                    <p>New certifications will be updated here soon. Stay tuned!</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <h2>Get In Touch</h2>
+                <div class="social-links">
+                    <a href="mailto:Ojapo671@gmail.com"><i class="fas fa-envelope"></i></a>
+                    <a href="tel:9986023360"><i class="fas fa-phone"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                </div>
+                <p>&copy; 2026 Pooja A M. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>
